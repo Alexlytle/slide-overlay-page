@@ -1,0 +1,388 @@
+body{
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+.content{
+    min-height: 300vh;
+}
+
+.bookwrapper{
+    position: fixed;
+    padding: 0;
+    top: 0;
+    width: 100%;
+   
+}
+.nopadding{
+padding: 0;
+}
+.img{
+    background-size: contain;
+}
+.img1{
+    background-image: linear-gradient(to right bottom, #172a45c0, #0a192fbe),url('/img/camera.jpg');
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-position: center;
+}
+.img2{
+    background-image:  linear-gradient(to right bottom, #172a45c0, #0a192fbe),url('/img/mindthegap.jpg');
+    background-size: cover;
+    min-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+ 
+
+}
+
+.img3{
+
+    background-image:  linear-gradient(to right bottom, #172a45c0, #0a192fbe),url('https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    min-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    /* background-repeat: no-repeat; */
+    
+}
+
+.img4{
+
+    background-image:  linear-gradient(to right bottom, #172a45c0, #0a192fbe),url('https://images.unsplash.com/photo-1595247191348-fd605f104467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');
+    background-size: cover;
+    min-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+
+#welcome{
+    font-size: 80px;
+    font-family: 'raleway';
+    color: white;
+}
+
+.headerLive {
+    text-align: center;
+    color: white;
+    font-family: 'raleway';
+}
+
+/**BREAK TO COLLUMN************************************/
+@media(max-width: 991.98px){
+    .bookwrapper{
+        position: relative;
+    }
+    .img{
+        display: none;
+    }
+    .page1{
+        min-height: 60vh!important;
+    }
+    #welcome{
+       font-size: 50px;
+       padding: 0 20px 0 20px;
+    }
+    .headerLive{
+        font-size: 30px;
+        margin: 0;
+    }
+    
+
+
+}
+.page{
+    min-height: 100vh;
+}
+
+.page1{
+    background-image: linear-gradient(to right bottom, #0c2344ee, #082044be),url("https://www.lytrod.com/custom_code/demonstration_files/from%20art_to_finish_background_25.png");
+   background-size: cover;
+   background-position: center;
+    /* background-color: #0A192F; */
+    justify-content: center;
+}
+.page2{
+    background-color: #0a192f;
+}
+.page3{
+    background-color: #CCD6F6;
+}
+.page4{
+    background-color: #8892B0
+}
+
+
+.bottomrow {
+    position: fixed;
+    top: 0px;
+    width: 66.66%;
+    /* background-color: #061529; */
+    /* height: 7%; */
+    padding: 15px;
+    z-index: 1;
+    left: 0;
+}
+@media(max-width:960px){
+    .bottomrow {
+      
+        width: 100%;
+      
+    }
+}
+
+.main-but{
+    background-color: white;
+    width: 150px;
+    border-radius: 0px;
+    border-radius: 100px;
+}
+
+.main-but.active{
+    background-color: #344b6d;
+    color:white;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+
+ .blank{
+    background-color: #F7F7FD;
+ }
+ #section1{
+    font-family: 'Roboto Condensed', sans-serif;
+ }
+ 
+
+ .video{
+    /* position:absolute; */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size: cover;
+   
+  }
+  .photoboxcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #eee;
+     min-height: 650px;
+     flex:1;
+  }
+  .photobox {
+    position:relative;
+    text-align: center;
+  /*   -webkit-transition: .3s; */
+    transition: 1s;
+    background-color: #ccc;
+    min-width: 10%;
+  
+     border-right: 5px solid white;
+        background-repeat: none!important;
+  /*    background-size: fill; */
+     background-position: center;
+     flex: 1;
+  }
+  .cover1,.cover2,.cover3,.cover4{
+      /* display: flex; */
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+      /* z-index: 10; */
+      content: 'hello';
+      left: 0;
+      color:red;
+      cursor: pointer;
+      top: 0;
+      /* z-index: -1; */
+      /* transform: translate(-50%,-50%); */
+
+  }
+  .photobox:hover {
+
+    transition: 1s;
+  
+  }
+  
+   .photobox:nth-child(2) {
+       background-color: black;
+        z-index: 10;
+  }
+  
+  /* .photobox:nth-child(3) {
+        background-image: url(http://binarytrail.com/wp-content/uploads/2017/02/scenic1.jpg);
+  }
+  .photobox:nth-child(4) {
+    background-image: url(http://binarytrail.com/wp-content/uploads/2017/02/scenic1.jpg);
+}  */
+
+  .photobox:nth-child(1):hover {
+     flex-grow: 5;
+  }
+  
+  .photobox:nth-child(2):hover {
+     flex-grow: 5;
+  }
+  
+  .photobox:nth-child(3):hover {
+     flex-grow: 5;
+  }
+  .photobox:nth-child(4):hover {
+    flex-grow: 5;
+ }
+  @media only screen and (max-width: 850px) {
+      body {
+     height:800px;
+      }
+      .photoboxcontainer {	
+          flex-direction: column;
+      }
+  
+  
+      
+  }
+  .inner-boxs h1 {
+    font-size: 13px;
+}
+  /* -------------reexamine------ */
+
+  .examinebox{
+    height: 200px;
+    cursor: pointer;
+    background-color: #ccd6f6;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.examineactive{
+    background-color: #061529;
+    color: white;
+}
+.examineoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 0%;
+    background-color: #0a192f;
+    z-index: 10;
+}
+
+.examineheader{
+    display: none;
+    text-align: center;
+    color: white;
+}
+.examinevideo{
+    display: none;
+}
+
+.examinecloses{
+
+    font-size: 30px;
+    /* padding: 20px; */
+   opacity: 0;
+   cursor: pointer;
+   color:white;
+}
+.iconexamine{
+    cursor: pointer;
+    font-size: 30px;
+    color: red;
+}
+.paddingexamine{
+    padding: 10px;
+}
+.examinebox p{
+    text-align: center;
+}
+
+/* MODAL */
+.modal-body p {
+    font-size: 16px;
+  }
+  .modal-content h1{
+    font-size: 20px;
+  }
+  
+  .modal-content p{
+    text-align: left;
+  }
+  
+  .modal-content{
+    padding: 20px;
+  }
+  .videobox{
+    outline:none;
+  }
+
+  .tv-content {
+    background: #ffffff00!important;
+    border: none;
+}
+
+.calendaractive{
+    border:1px solid #0a192f!important;
+    
+}
+
+/***/
+.header p{
+    margin-left: 10px;
+}
+
+.tv {
+    display: inline;
+    margin-left: 43px;
+    border-radius: 80px;
+    height: 80px;
+    width: 80px;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+.node{
+    width: 900px;
+}
+
+
+.main-but{
+    font-family: 'raleway';
+}
+#modalBut{
+    font-family: 'raleway';
+}
+#modalBut:hover{
+    background-color: #050d18;
+    color: white;
+    border:1px solid white;
+    font-family: 'raleway';
+}
