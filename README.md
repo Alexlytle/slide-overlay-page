@@ -1,2 +1,5 @@
-# slidepage
+# Technology
+jquery 
+gsap
+
  
