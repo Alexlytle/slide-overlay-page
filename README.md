@@ -1,4 +1,4 @@
-# Technology
+# Technologies used
 jquery 
 gsap
 
